@@ -13,29 +13,24 @@ Examples:
 Function signature:
      */
     public static void main(String[] args) {
+        String input1 = "123";
+        String input2 = "53456";
+        String input3 = "29";
 
-        Scanner scanner=new Scanner(System.in);
-        System.out.println("Enter the String ");
-        String str=scanner.next();
-        //  Increment(str);
-        System.out.println(Increment(str));
+        System.out.println("Increment : " + Increment(input1));
+        System.out.println("Increment : " + Increment(input2));
+
+        System.out.println("Increment : " + Increment(input3));
 
 
     }
 
     private static String Increment(String str) {
 
-        String newStr="";
+        int number = Integer.parseInt(str);
+        number++;
 
-       int lastDigit=str.length()-1;
-       if(lastDigit==str.length()){
-          newStr+= lastDigit;
-       }
-        return newStr;
-
-
-
-
+        return Integer.toString(number);
     }
 
 }

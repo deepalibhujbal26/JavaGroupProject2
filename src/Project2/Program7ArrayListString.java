@@ -19,7 +19,7 @@ with “A” and you want to return them in lower case"
         names.add("anwar");
 
 
-        for (int i = names.size() - 1; i > 0; i--) {
+        for (int i = 0; i <names.size(); i++) {
             if (names.get(i).startsWith("A") || names.get(i).startsWith("a")) {
 
                 System.out.println(names.get(i).toLowerCase());
